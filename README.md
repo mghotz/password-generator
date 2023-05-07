@@ -15,7 +15,7 @@ pip install password-generator-lib
 To generate a password using the command-line interface, you can use the following command:
 
 ```sh
-python password_generator.py <length> [-l] [-u] [-n] [-s] [-f] [-r] [-q <quantity>] [--no-sequential-characters]
+python generator.py <length> [-l] [-u] [-n] [-s] [-f] [-r] [-q <quantity>] [--no-sequential-characters]
 ```
 
 The available options are:
@@ -33,7 +33,7 @@ The available options are:
 Example usage:
 
 ```sh
-python password_generator.py 10 -l -u -n -s -f -r --no-sequential-characters
+python generator.py 10 -l -u -n -s -f -r --no-sequential-characters
 ```
 
 ## Usage - Importing the Class
@@ -41,7 +41,7 @@ python password_generator.py 10 -l -u -n -s -f -r --no-sequential-characters
 You can also import the `PasswordGenerator` class from the `password_generator` module and use it in your Python code:
 
 ```python
-from password_generator import PasswordGenerator
+from password_generator import generator
 
 generator = PasswordGenerator(
     length=10,
